@@ -8,7 +8,7 @@ template IsEqual() {
 
     signal diff;
     diff <== a - b;
-    out <== 1 - diff * diff; // a == b ise out 1 olur, değilse 0
+    out <== 1 - diff * diff; // if a == b out is 1, if not its 0
 }
 
 // Küçük eşit kontrolü bileşeni
