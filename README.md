@@ -69,7 +69,7 @@ snarkjs groth16 prove balance_0001.zkey witness.wtns proof.json public.json
 
 ```cmd
 snarkjs groth16 verify verification_key.json public.json proof.json
-
+```
 
 ## Contributing
 
