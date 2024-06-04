@@ -1,6 +1,6 @@
 pragma circom 2.0.0;
 
-// Eşitlik kontrolü bileşeni
+// Equal booleans
 template IsEqual() {
     signal input a;
     signal input b;
@@ -11,7 +11,7 @@ template IsEqual() {
     out <== 1 - diff * diff; // if a == b out is 1, if not its 0
 }
 
-// Küçük eşit kontrolü bileşeni
+// lt & gt conditions
 template IsLessEqual() {
     signal input a;
     signal input b;
@@ -46,7 +46,7 @@ template RequestProof() {
     component isSufficientBalance = IsLessEqual();
     component isValidRequest = IsEqual();
 
-    // Kısıtlamalar
+    // Conditions
     isMatchAmount.a <== requestedAmount;
     isMatchAmount.b <== requested;
 
@@ -56,7 +56,7 @@ template RequestProof() {
     isValidRequest.a <== validRequest;
     isValidRequest.b <== 1;
 
-    // Tüm boolean kontrollerinin çarpımı
+    // Multiplications of the booleans
     signal intermediate;
     intermediate <== isMatchAmount.out * isSufficientBalance.out;
     isRequestValid <== intermediate * isValidRequest.out;
