@@ -1,7 +1,7 @@
 
 # ZKSNARKS and Circom DSL
 
-> A proof-of-concept that how we can generate zer-knowledge proofs with using Circom domain specific language via ZKSNARKS. 
+> A proof-of-concept that how we can generate zero-knowledge proofs with using Circom domain specific language via ZKSNARKS. 
 
 > Check the balance.circom the circuit creation example
 
