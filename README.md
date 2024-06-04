@@ -76,4 +76,3 @@ snarkjs groth16 verify verification_key.json public.json proof.json
 Contributions to expand or improve the repository are welcome! 
 
 [@denizumutdereli](https://www.linkedin.com/in/denizumutdereli)
-```
